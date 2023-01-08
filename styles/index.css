@@ -1,0 +1,38 @@
+ body{
+  margin-left: 500px;
+  margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+ }
+header {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  background-color:#0076B6; 
+  padding: 10px;
+  width: 400px;
+  border-radius: 35px;
+}
+.name{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+.H_assignment{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+ul{
+  margin-left: 100px;
+}
+
+footer{
+  background-color:#0076B6; 
+  padding: 5px;
+  width: 400px;
+  border-radius: 35px;
+}
+hr{
+  width: 250px;
+  margin-right: 550px;
+}
