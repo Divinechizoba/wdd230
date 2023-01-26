@@ -84,6 +84,31 @@ main{
     background-color:rgb(200, 205, 205);
 }
 
+#chamber-events{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 2px;
+}
+#event-one{
+    padding: 10px;
+    width:auto;
+    height: auto;
+    background-color:rgb(200, 205, 205);
+}
+#event-two{
+    padding: 10px;
+    width:auto;
+    height: auto;
+    background-color:rgb(200, 205, 205);
+}
+#event-three{
+    padding: 10px;
+    width:auto;
+    height: auto;
+    background-color:rgb(200, 205, 205);
+}
+
+
 footer {
     background-color: #7F361E;
     padding: 30PX;
