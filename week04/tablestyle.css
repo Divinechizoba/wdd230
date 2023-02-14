@@ -1,8 +1,41 @@
-body{
-    background-color: antiquewhite;
-    
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.h-header{
-    margin-right: 700px;
+header{
+text-align: center;
+background-color: black;
+font-size: 30px;
+font-weight: bolder;
+font-stretch: extra-expanded;
+}
+.head{
+color: #f2f2f2;
+}
+.good{
+    color: blue;
+}
+.bad{
+    color: red;
+}
+footer{ text-align: center;
+font-size: bold;
+font-weight: bolder;
+font-stretch: extra-expanded;}
+
+th, td {
+border: 1px solid black;
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+td{
+text-align: center;
 }
