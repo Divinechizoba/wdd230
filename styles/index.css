@@ -5,15 +5,12 @@
  }
 header {
   display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr 1fr;
   background-color:#0076B6; 
   padding: 10px;
   width: 400px;
   border-radius: 10px;
 }
 .name{
-  text-align: center;
   font-weight: bold;
 }
 .H_assignment{
@@ -23,11 +20,6 @@ header {
 }
 .lesson-titles{
   position: right;
-}
-#mode {
-	top: 1rem;
-	right: 1rem;
-	cursor: pointer;
 }
 
 menu {
