@@ -1,0 +1,68 @@
+@media (min-width: 400px) {
+
+    html,
+    body {
+        height: none;
+    }
+
+    html {
+        display: grid;
+        margin: none;
+    }
+
+    header {
+        width: 80%;
+        margin-left: 8%;
+    }
+
+    nav {
+        display: flex;
+        width: 70%;
+        margin-left: 14%;
+        text-align: center;
+
+    }
+
+
+    main {
+        width: 100%;
+    }
+
+    .H_assignment,
+    .L-assignment {
+        align-content: center;
+        width: 60%;
+    }
+
+    /* Define a grid container for the sections */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two equal-width columns */
+        width: 60%;
+        margin-left: 16%;
+        margin-right: 10%;
+    }
+
+    /* Style for each section */
+    .card-one,
+    .Card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        background-color: #f0f0f0;
+        justify-content: center;
+
+    }
+
+    /* Additional styling for the .Learning-activity class */
+    .Learning-activity {
+        font-weight: bold;
+    }
+
+    footer {
+        width: 80%;
+        margin-left: 8%;
+    }
+
+}

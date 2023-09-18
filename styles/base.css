@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header {
+  display: grid;
+  background-color: #0076B6;
+  padding: 5px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+nav {
+  width: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.nav-bar {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.highlight {
+  list-style: none;
+}
+
+main {
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.H_assignment {
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  color: #333;
+  border-bottom: 1px solid #0076B6;
+
+}
+
+.lesson-titles {
+  position: right;
+  text-align: left;
+  list-style: none;
+}
+
+h3 {
+  padding: 20px;
+  background-color: #0076B6;
+  margin-top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+section {
+  width: 410px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+
+
+.card {
+  width: 370px;
+  border: 1px solid #333;
+}
+
+menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+}
+
+.L-assignment {
+  display: inline-block;
+  color: #333;
+  /* Text color */
+  border-top: 1px solid #0074d9;
+  margin-top: 10px;
+}
+
+footer {
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  text-align: center;
+}

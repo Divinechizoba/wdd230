@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Assignment portal" content=" Assignment portal for Divne Chizoba Chukwu in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Divine Chizoba Chukwu's BYU-IDAHO Assignment Portal" />
-    <meta property="og:type" content="Official Website of Divine Chizoba Chukwu's WDD230 Assignments. Here contains all his Assignments specifically structured and designed by him. " />
-    <meta property="og:url" content="https://divinechizoba.github.io/wdd230/" />
-    <title>Divne Chizoba Chukwu's Assignment Portal</title>
-  </head>
 
-  <body>
-    <header>
-      <img src="images/divine.jpg" alt="A picture of Divine Chizoba Chukwu.">
-      <span class="name">Divine Chizoba Chukwu</span>
-    </header> 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divne Chizoba Chukwu's - WDD 230 - Web Frontend Development</title>
+  <meta name="description"
+    content="Divne Chizoba Chukwu  WDD 230 - Web Frontend Development course assignment Portal" />
+  <meta name="Autor" content="" />
+  <meta property="og:title" content="Divine Chizoba Chukwu's BYU-IDAHO Assignment Portal" />
+  <meta property="og:type"
+    content="Official Website of Divine Chizoba Chukwu's WDD230 Assignments. Here contains all his Assignments specifically structured and designed by him. " />
+  <meta property="og:url" content="https://divinechizoba.github.io/wdd230/" />
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
 
-    <main>
-      <div class="H_assignment">WDD 230: Assignment Portal </div>
-      <hr>
-      <ul class="menu">
-        <li title="home">
-          <a href="#" id="menu-button">Menu</a>
+<body>
+  <header>
+    <img src="images/divine.jpg" alt="A picture of Divine Chizoba Chukwu.">
+    <span class="name">Divine Chizoba Chukwu</span>
+  </header>
+  <nav>
+    <li class="highlight"><a href="url" class="nav-bar">Chamber</a></li>
+    <li class="highlight"> <a href="url" class="nav-bar">Home</a></li>
+    <li class="highlight"><a href="url" class="nav-bar">Site Plan</a></li>
+    <li class="highlight"><a href="url" class="nav-bar">Form</a></li>
+  </nav>
+
+
+
+  <main>
+    <h2 class="H_assignment">
+      WDD 230: Assignment Portal
+    </h2>
+
+    <div class="grid-container">
+      <section attribute="Card" class="card-one">
+
+        <h3 class="Learning-activity">
+          Learning Activities
+        </h3>
+
         <ul class="lesson-titles">
-        <li>Lesson 01: <a href="url">Title</a></li>
-        <li>Lesson 02: <a href="url">Title</a></li>
-        <li>Lesson 03: <a href="url">Title</a></li>
-        <li>Lesson 04: <a href="url">Title</a></li>
-        <li>Lesson 05: <a href="url">Title</a></li>
-        <li>Lesson 06: <a href="url">Title</a></li>
-        <li>Lesson 07: <a href="url">Title</a></li>
+          <li>Lesson 01: <a href="url">a</a></li>
+          <li>Lesson 02: <a href="url">a</a></li>
+          <li>Lesson 03: <a href="url">a</a></li>
+          <li>Lesson 04: <a href="url">a</a></li>
+          <li>Lesson 05: <a href="url">a</a></li>
+          <li>Lesson 06: <a href="url">a</a></li>
+          <li>Lesson 07: <a href="url">a</a></li>
         </ul>
-      </ul>
-    
-      <div>
-        <hr>
-        <p>lessons may need more than one activity/assignment link</p>
-      </div>
-    </main>
+      </section>
 
-    <footer>
-      <p>&copy; <span id="demo"></span> .:|:. Divine Chizoba Chukwu .:|:. Delta State, Nigeria</p>
-      <p id="lastupdated"></p>
-   </footer>
-    <script src="script/index.js"></script> <!--Get javascript content-->
-  </body>
+
+      <section class="Card">
+        <h3>
+          Information
+        </h3>
+        <div id="weather-info">
+          Loading weather data...
+        </div>
+        <p>This page has been visited <span id="visit-count">0</span> times.</p>
+      </section>
+    </div>
+
+    <div class="L-assignment">
+      <p>Lessons may need more than one assignment link</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="demo"></span> .:|:. Divine Chizoba Chukwu .:|:. Delta State, Nigeria</p>
+    <p> Last Modification: <span id="lastmodified"></span></p>
+  </footer>
+  <script src="script/getDates.js"></script> <!--Get javascript content-->
+</body>
+
 </html>
