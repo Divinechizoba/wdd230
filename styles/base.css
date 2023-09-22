@@ -13,6 +13,7 @@ body {
   vertical-align: middle;
 }
 
+
 header {
   display: grid;
   background-color: #0076B6;
@@ -23,6 +24,21 @@ header {
 
 .name {
   font-weight: bold;
+  font-size: 30px;
+}
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  background-color: #eee;
+  color: #000;
+}
+
+#menu::before {
+  content: "≡";
 }
 
 nav {
@@ -33,11 +49,63 @@ nav {
   text-align: center;
 }
 
-.nav-bar {
+.navigation {
+  list-style: none;
+  margin: 0 auto;
   font-weight: bold;
   color: black;
   font-size: 18px;
   padding: 20px;
+}
+
+navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+  color: white;
+  background-color: black;
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    flex: 1 1 100%;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
+  }
 }
 
 .highlight {
