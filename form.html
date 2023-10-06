@@ -15,8 +15,8 @@
   <meta property="og:image" content="images\Enugu.jpeg">
   <meta property="og:url" content="https://divinechizoba.github.io/wdd230/" />
 
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/form.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
@@ -29,71 +29,52 @@
     <img src="images/divine.jpg" alt="Picture of Divine Chizoba Chukwu.">
     <span class="name">Divine Chizoba Chukwu</span>
   </header>
-
-  <a id="menu" href="#"></a>
-
   <nav>
     <ul class="navigation">
       <li class="highlight"><a href="url">Chamber</a></li>
-      <li class="highlight"> <a href="url">Home</a></li>
+      <li class="highlight"> <a href="index.html">Home</a></li>
       <li class="highlight"><a href="url">Site Plan</a></li>
-      <li class="highlight"><a href="form.html">Form</a></li>
+      <li class="highlight"><a href="url">Form</a></li>
     </ul>
   </nav>
 
-
-
   <main>
-    <h2 class="H_assignment">
-      WDD 230: Assignment Portal
-    </h2>
+    <h1>Registration Form</h1>
+    <form action="record.html" method="get">
+      <!-- 1. Username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
 
-    <div class="grid-container">
-      <section attribute="Card" class="card-one">
+      <!-- 2. Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}"
+        title="Password must be at least 8 characters long and alphanumeric"><br><br>
 
-        <h3 class="Learning-activity">
-          Learning Activities
-        </h3>
-        <picture>
-          <source srcset="images/church of jesus christ temple.webp" media="max-width: 400px">
-          <img src="images" alt="">
-        </picture>
-        <ul class="lesson-titles">
-          <li>Lesson 01: <a href="week01\chamber-site-plan.html">The Chamber Site Plan</a></li>
-          <li>Lesson 02: <a href="chamber\index.html">Chamber Site</a></li>
-          <li>Lesson 03: <a href="url">a</a></li>
-          <li>Lesson 04: <a href="https://codepen.io/divinechizoba/pen/LYMXbqr">CSS Pseudo-classes</a>
-            <a href="images\combinator.png">combinator excercise</a>
-            <a href="url">a</a>
-          </li>
-          <li>Lesson 05: <a href="url">a</a></li>
-          <li>Lesson 06: <a href="url">a</a></li>
-          <li>Lesson 07: <a href="url">a</a></li>
-        </ul>
-      </section>
+      <!-- 3. Password Confirmation -->
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required oninput="checkPasswordMatch()"><br>
+      <div id="passwordMatchMessage"></div><br>
 
+      <!-- 4. Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+        title="Please enter a valid email address"><br><br>
 
-      <section class="Card">
-        <h3>
-          Information
-        </h3>
-        <div id="weather-info">
-          Loading weather data...
-        </div>
-        <p>This page has been visited <span id="visit-count">0</span> times.</p>
-      </section>
-    </div>
+      <!-- 5. Page Rating -->
+      <label for="rating">Page Rating:</label>
+      <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRatingValue()">
+      <span id="ratingValue">1</span><br><br>
 
-    <div class="L-assignment">
-      <p>Lessons may need more than one assignment link</p>
-    </div>
+      <!-- 6. Button -->
+      <input type="submit" value="Submit">
+    </form>
   </main>
-
   <footer>
     <p>&copy; <span id="demo"></span> .:|:. Divine Chizoba Chukwu .:|:. Delta State, Nigeria</p>
     <p> Last Modification: <span id="lastmodified"></span></p>
   </footer>
   <script src="script/getDates.js"></script> <!--Get javascript content-->
+
 </body>
 
 </html>

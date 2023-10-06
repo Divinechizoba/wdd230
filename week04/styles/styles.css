@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Zebra striping for even rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Define styles for the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: #ccc;
+}
+
+.centered-caption {
+    text-align: center;
+    /* Center-align the caption */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    /* Add some space between the table and the caption */
+}
