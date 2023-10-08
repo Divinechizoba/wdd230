@@ -118,7 +118,7 @@ body {
 /* Center the form on the page */
 main {
     background-color: #FFFFFF;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -126,8 +126,9 @@ main {
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-
+    justify-content: space-between;
 }
+
 
 /* Style form elements */
 .form-group {
@@ -145,7 +146,7 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -319,31 +320,6 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-/* Add additional styles as needed */
-
-
-/* Basic layout styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.membership-form {
-    flex: 1;
-    max-width: 400px;
-}
-
-
-
 
 /* Style the form and benefits list as needed */
 
