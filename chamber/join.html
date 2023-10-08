@@ -73,13 +73,27 @@
                 <input type="text" id="organization" name="organization" required>
 
                 <!-- Add an event listener to the membership level select -->
-                <label for="membership_level">Membership Level:</label>
-                <select id="membership_level" name="membership_level">
-                    <option value="NP Membership">NP Membership (No fee)</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select>
+                <div class="membership-container">
+                    <div class="membership-form">
+                        <label for="membership_level">Membership Level:</label>
+                        <select id="membership_level" name="membership_level">
+                            <option value="NP Membership">NP Membership (No fee)</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div class="benefits">
+                        <h2>Membership Level Benefits</h2>
+                        <ul>
+                            <li><strong>NP Membership:</strong> No membership fee</li>
+                            <li><strong>Bronze Membership:</strong> Increased benefits for bronze members go here.</li>
+                            <li><strong>Silver Membership:</strong> Enhanced benefits for silver members go here.</li>
+                            <li><strong>Gold Membership:</strong> Premium benefits for gold members go here.</li>
+                        </ul>
+                    </div>
+                </div>
+
 
                 <label for="description">Business/Organization Description:</label>
                 <textarea id="description" name="description"></textarea>
