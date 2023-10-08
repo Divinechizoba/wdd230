@@ -64,8 +64,9 @@
                 <label for="organization">Business/Organization Name:</label>
                 <input type="text" id="organization" name="organization" required>
 
+                <!-- Add an event listener to the membership level select -->
                 <label for="membership_level">Membership Level:</label>
-                <select id="membership_level" name="membership_level">
+                <select id="membership_level" name="membership_level" onchange="toggleBenefits()">
                     <option value="NP Membership">NP Membership (No fee)</option>
                     <option value="Bronze Membership">Bronze Membership</option>
                     <option value="Silver Membership">Silver Membership</option>
