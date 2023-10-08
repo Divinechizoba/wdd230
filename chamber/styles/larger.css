@@ -1,12 +1,56 @@
+/* Apply background color to the header */
 header {
     background-color: #7F361E;
-    display: grid;
-    grid-template-columns: 7fr 1fr;
+    color: #fff;
+    /* Set text color to white for better readability */
+    padding: 20px 0;
+    /* Add padding to the top and bottom */
+    text-align: center;
+    /* Center align the content */
 }
 
+/* Style the heading */
+#heading {
+    font-size: 36px;
+    /* Set font size for the heading */
+}
+
+/* Style the Enugu State text */
 #enugu {
-    font-size: larger;
-    font-weight: lighter;
+    font-weight: bold;
+    /* Make it bold */
+}
+
+/* Style the navigation menu */
+nav {
+    margin-top: 20px;
+    /* Add some space below the heading */
+}
+
+#navigation {
+    list-style-type: none;
+    /* Remove the default list bullet */
+    padding: 0;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 20px;
+    /* Add space between menu items */
+}
+
+#navigation a {
+    text-decoration: none;
+    /* Remove underlines from links */
+    color: #fff;
+    /* Set link color to white */
+    font-weight: bold;
+    /* Make links bold */
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+    /* Underline links on hover */
 }
 
 #chamber {
@@ -14,9 +58,6 @@ header {
 }
 
 
-#heading {
-    padding-left: 15px;
-}
 
 /* Define your grid layout */
 .container {
@@ -55,6 +96,93 @@ header {
     /* Center-align the image and caption */
 }
 
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the form on the page */
+main {
+    background-color: #FFFFFF;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style error messages for required fields */
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border-color: #ff5252;
+}
+
+/* Style legend for fieldset */
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
 /* Style for the images */
 .image img {
     max-width: 100%;
@@ -73,9 +201,7 @@ header {
     /* Adjust spacing between the image and caption */
 }
 
-#navigation {
-    padding-right: 15px;
-}
+
 
 
 #call-to-action {
@@ -92,10 +218,6 @@ header {
 
 #enugu_capital {
     width: 100%;
-}
-
-main {
-    background-color: #FFFFFF;
 }
 
 #main-subcategory {
@@ -173,10 +295,65 @@ main {
     background-color: rgb(200, 205, 205);
 }
 
-
+/* Apply background color */
 footer {
     background-color: #7F361E;
-    padding: 30PX;
-    display: grid;
-    grid-template-columns: 7fr 1fr;
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Style individual footer sections */
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style links within the footer */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add additional styles as needed */
+
+
+/* Basic layout styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.membership-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+
+
+
+/* Style the form and benefits list as needed */
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    .membership-form {
+        margin-right: 20px;
+    }
 }

@@ -29,7 +29,7 @@
                 Chamber of Commerce
             </div>
         </h1>
-        C:\Users\HP\OneDrive\Desktop\WEB DEVELOPMENT ONE\wdd230\chamber\discover.html
+
         <nav>
             <ul id="navigation">
                 <li>Home</li>
@@ -41,36 +41,44 @@
     </header>
 
     <main>
-        <div>
-            <P id="call-to-action">
-                Join the Chamber
-            </P>
 
-            <img src="images\enugu capital.png" alt="A beautiful environment in enugu state nigeria."
-                id="enugu_capital">
-        </div>
-        <div id="main-subcategory">
-            <div id="sub-category">
-                <div id="events">
-                    <h2>Events</h2>
-                </div>
+        <!-- Add the form here -->
+        <div id="membership-form">
+            <form action="thankyou.html" method="get">
+                <label for="first_name">Applicant's First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
 
-                <div id="weather">
-                    <h2>Weather</h2>
-                </div>
-            </div>
-            <div id="advertisement">
-                <div id="vmotors">
-                    <h3> VC Motor Ventures</h3>
-                </div>
-                <div id="rgalleria">
-                    <h3> Ruth's Galleria</h3>
-                </div>
+                <label for="last_name">Applicant's Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
 
-                <div id="pplus">
-                    <h3> Provision Plus Nigeria Limited</h3>
-                </div>
-            </div>
+                <label for="position">Applicant's Title/Position:</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
+                <!-- Pattern attribute allows only alpha characters, hyphens, and spaces with a minimum of seven characters -->
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+
+                <label for="membership_level">Membership Level:</label>
+                <select id="membership_level" name="membership_level">
+                    <option value="NP Membership">NP Membership (No fee)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="Timestamp Placeholder">
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
 
