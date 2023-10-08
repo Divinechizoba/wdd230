@@ -17,4 +17,14 @@
         grid-template-columns: repeat(3, 1fr);
         /* Three columns for screens wider than 768px */
     }
+
+    .membership-container {
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+
+    .membership-form {
+        margin-right: 0;
+        /* Remove right margin */
+    }
 }
