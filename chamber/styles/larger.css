@@ -331,16 +331,3 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-/* Style the form and benefits list as needed */
-
-/* Media query for larger screens */
-@media (min-width: 768px) {
-    main {
-        flex-direction: row;
-    }
-
-    .membership-form {
-        margin-right: 20px;
-    }
-}

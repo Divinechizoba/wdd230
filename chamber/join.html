@@ -10,12 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="images/favicon.ico">
+
+    <meta name="description"
+        content="Discover opportunities for success with the Enugu State Chamber of Commerce. Join us today to explore membership benefits, networking, and resources for businesses in Enugu, Nigeria. Unlock your business potential with us!">
+    <meta name="author" content="Enugu State Chamber of Commerce">
+    <title>Enugu State Chamber of Commerce</title>
+
     <meta property="og:title" content="Enugu state chamber of commerce" />
     <meta property="og:type"
         content="Official Website of enugu state chamber of commerce. We are here to help you succeed." />
     <meta property="og:url" content="https://divinechizoba.github.io/wdd230/" />
-    <meta property="og:image" content="images\enugu capital.png" />
-    <title>Enugu State Chamber of Commerce</title>
+    <meta property="og:image" content="images/enugu capital.png" />
+
 </head>
 
 <body>
@@ -32,8 +38,8 @@
 
         <nav>
             <ul id="navigation">
-                <li>Home</li>
-                <li><a href="chamber/discover.html">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li>Directory</li>
                 <li>Join</li>
             </ul>
@@ -41,7 +47,6 @@
     </header>
 
     <main>
-
         <!-- Add the form here -->
         <div id="membership-form">
             <form action="thankyou.html" method="get">
@@ -66,7 +71,7 @@
 
                 <!-- Add an event listener to the membership level select -->
                 <label for="membership_level">Membership Level:</label>
-                <select id="membership_level" name="membership_level" onchange="toggleBenefits()">
+                <select id="membership_level" name="membership_level">
                     <option value="NP Membership">NP Membership (No fee)</option>
                     <option value="Bronze Membership">Bronze Membership</option>
                     <option value="Silver Membership">Silver Membership</option>
@@ -81,6 +86,7 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
+
     </main>
 
     <footer>
@@ -100,5 +106,3 @@
     <script src="script/index.js"></script> <!--Get javascript content-->
 
 </body>
-
-</html>
