@@ -1,10 +1,21 @@
+/* Global CSS Variables */
+:root {
+    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Box shadow variable */
+}
+
+/* Global CSS Variables */
+:root {
+    --highlight-color: #FFA500;
+    /* Highlight color variable */
+}
+
+/* Global CSS Variables */
 :root {
     --primary-color: #0076B6;
-    /* Define a primary color variable */
+    /* Primary color variable */
     --font-family: 'Open Sans', sans-serif;
-    /* Define a font family variable */
-    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    /* Define a box shadow variable */
+    /* Font family variable */
 }
 
 /* Reset default margin and padding for all elements */
@@ -45,7 +56,7 @@ header img {
     /* Vertically align image and text */
 }
 
-.name {
+#name {
     display: inline-block;
     /* Display the text inline with the image */
     vertical-align: middle;
