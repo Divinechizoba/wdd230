@@ -32,5 +32,3 @@ function updateRatingValue() {
     var rating = document.getElementById("rating").value;
     document.getElementById("ratingValue").textContent = rating;
 }
-
-
