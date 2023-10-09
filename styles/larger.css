@@ -1,74 +1,170 @@
-@media (min-width: 400px) {
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    html,
-    body {
-        height: none;
-    }
+/* Set background color for the entire page */
+body {
+    background-color: #f4f4f4;
+    /* Light gray background */
+    font-family: 'Open Sans', sans-serif;
+    /* Use Google Font for text */
+}
 
-    html {
-        display: grid;
-        margin: none;
-    }
+/* Header styles */
+header {
+    background-color: #0076B6;
+    /* Header background color */
+    color: white;
+    /* Header text color */
+    text-align: center;
+    padding: 20px;
+}
 
-    header {
-        width: 80%;
-        margin-left: 8%;
-    }
+header img {
+    max-width: 100px;
+    /* Limit image size */
+    border-radius: 50%;
+    /* Round the image corners */
+    display: inline-block;
+    /* Display the image inline with text */
+    margin-right: 10px;
+    /* Add some space between image and text */
+    vertical-align: middle;
+    /* Vertically align image and text */
+}
 
-    nav {
-        display: flex;
-        width: 70%;
-        margin-left: 14%;
-        text-align: center;
+.name {
+    display: inline-block;
+    /* Display the text inline with the image */
+    vertical-align: middle;
+    /* Vertically align text and image */
+}
 
-    }
 
+/* Navigation styles */
+nav {
+    background-color: #eee;
+    /* Navigation background color */
+    padding: 10px;
+}
 
-    main {
-        background-color: #fff;
-        margin: 20px auto;
-        max-width: 600px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+.navigation {
+    list-style: none;
+    text-align: center;
+}
 
-    .H_assignment,
-    .L-assignment {
-        align-content: center;
-        width: 60%;
-    }
+.navigation li {
+    display: inline;
+    margin-right: 20px;
+}
 
-    /* Define a grid container for the sections */
+.navigation a {
+    text-decoration: none;
+    color: #0076B6;
+    /* Link color */
+    font-weight: bold;
+}
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+.H_assignment {
+    background-color: #0076B6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card-one {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-one img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.lesson-titles {
+    list-style: none;
+    padding: 0;
+}
+
+.lesson-titles li {
+    margin-bottom: 10px;
+}
+
+.lesson-titles a {
+    color: #0076B6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Information card styles */
+.Card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#weather-info {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#visit-count {
+    font-weight: bold;
+}
+
+/* Assignment section styles */
+.L-assignment {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
     .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* Two equal-width columns */
-        width: 60%;
-        margin-left: 16%;
-        margin-right: 10%;
+        grid-template-columns: 1fr;
     }
 
-    /* Style for each section */
     .card-one,
     .Card {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-        background-color: #f0f0f0;
-        justify-content: center;
-
+        margin-bottom: 20px;
     }
-
-    /* Additional styling for the .Learning-activity class */
-    .Learning-activity {
-        font-weight: bold;
-    }
-
-
-    footer {
-        width: 80%;
-        margin-left: 8%;
-    }
-
 }

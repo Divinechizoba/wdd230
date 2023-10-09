@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #0076B6;
+    /* Define a primary color variable */
+    --font-family: 'Open Sans', sans-serif;
+    /* Define a font family variable */
+    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Define a box shadow variable */
+}
+
 /* Reset default margin and padding for all elements */
 * {
     margin: 0;
@@ -109,6 +118,32 @@ input[type="range"] {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
+/* Pseudo-classes */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="range"]:hover {
+    /* Styles for input fields on hover */
+    border-color: var(--primary-color);
+    /* Use global primary color variable */
+}
+
+input[type="submit"]:active {
+    /* Styles for the submit button when active (clicked) */
+    background-color: #005380;
+    /* Darken the background color */
+}
+
+/* Pseudo-elements */
+label::before {
+    /* Add content before every label element */
+    content: "*";
+    color: #888;
+    font-weight: normal;
+}
+
+
 
 input[type="range"] {
     width: auto;
