@@ -27,4 +27,11 @@
         margin-right: 0;
         /* Remove right margin */
     }
+
+    .image-container .image img {
+        transform: none;
+        /* Remove the hover effect on mobile */
+        transition: none;
+        /* Remove transition effect on mobile */
+    }
 }

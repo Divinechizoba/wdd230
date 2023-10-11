@@ -29,7 +29,7 @@
                 Chamber of Commerce
             </div>
         </h1>
-        C:\Users\HP\OneDrive\Desktop\WEB DEVELOPMENT ONE\wdd230\chamber\discover.html
+
         <nav>
             <ul id="navigation">
                 <li>Home </li>
@@ -41,6 +41,10 @@
     </header>
 
     <main>
+        <section class="sidebar-two">
+            <!-- JavaScript will populate this area with the visit message -->
+        </section>
+
         <div class="container">
             <aside class="sidebar">
                 <div id="event-one">
@@ -52,11 +56,14 @@
                 <div id="event-three">
                     <h2>Business persons meeting</h2>
                 </div>
-
+                <div id="event-four">
+                    <h2>Business persons meeting</h2>
+                </div>
             </aside>
-            <main class="content">
+
+            <div class="content">
                 <div class="image-container">
-                    <div class="image">
+                    <div class="image" loading="lazy">
                         <img src="images\market square.webp" alt="Image 1" loading="lazy">
                         <p class="caption">Urban Market Square Enugu StateCaption for Image 1</p>
                     </div>
@@ -81,7 +88,7 @@
                         <p class="caption">An Overview of Enugu State. </p>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
     </main>
 
@@ -97,7 +104,7 @@
         <div class="message" id="message"></div>
 
     </footer>
-
+    <script src="scripts\message.js"></script>
     <script src="script/index.js"></script> <!--Get javascript content-->
 
 </body>
