@@ -13,6 +13,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
+
 function checkPasswordMatch() {
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirmPassword").value;
