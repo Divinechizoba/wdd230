@@ -231,20 +231,34 @@ legend {
 
 
 
-#call-to-action {
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: rgb(200, 205, 205);
-    padding: 12px;
-    width: 140px;
-    bottom: 50%;
-    left: 50%;
+.hero {
+    margin: 10px auto;
+    position: relative;
 }
 
-#enugu_capital {
+.hero img {
     width: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 1;
+    /* Buenas */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Great Vibes", serif;
 }
 
 #main-subcategory {
