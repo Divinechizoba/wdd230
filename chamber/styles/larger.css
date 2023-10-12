@@ -329,7 +329,8 @@ legend {
 
 }
 
-.sidebar-two {
+.sidebar-two,
+H1 {
     width: 100%;
     text-align: center;
     background-color: rgb(200, 205, 205);
