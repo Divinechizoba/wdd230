@@ -382,3 +382,67 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+/* Style the member directory section */
+#member-directory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.member-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.member-item:hover {
+    transform: translateY(-5px);
+}
+
+.member-item h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.member-item p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Add this CSS to style the grid view */
+#member-directory.grid-view .member-item {
+    width: calc(33.33% - 20px);
+}
+
+/* Add this CSS to style the list view */
+#member-directory.list-view .member-item {
+    width: 100%;
+}
+
+
+/* Add this to your CSS to style the buttons */
+#toggle-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#toggle-buttons button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#toggle-buttons button:hover {
+    background-color: #555;
+}

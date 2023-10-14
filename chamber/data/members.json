@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Company 1",
+            "address": "123 Main Street, City, Country",
+            "phone": "123-456-7890",
+            "website": "https://www.company1.com",
+            "image": "company1.jpg",
+            "membership_level": "Gold",
+            "additional_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company 2",
+            "address": "456 Elm Avenue, Town, Country",
+            "phone": "987-654-3210",
+            "website": "https://www.company2.com",
+            "image": "company2.jpg",
+            "membership_level": "Silver",
+            "additional_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name": "Company 3",
+            "address": "789 Oak Road, Village, Country",
+            "phone": "567-890-1234",
+            "website": "https://www.company3.com",
+            "image": "company3.jpg",
+            "membership_level": "Bronze",
+            "additional_info": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            "name": "Company 4",
+            "address": "101 Pine Lane, Suburb, Country",
+            "phone": "321-543-7654",
+            "website": "https://www.company4.com",
+            "image": "company4.jpg",
+            "membership_level": "Platinum",
+            "additional_info": "Dolor sit amet, sed do eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Company 5",
+            "address": "222 Cedar Drive, Town, Country",
+            "phone": "555-777-9999",
+            "website": "https://www.company5.com",
+            "image": "company5.jpg",
+            "membership_level": "Gold",
+            "additional_info": "Tempor incididunt ut labore et dolore magna aliqua, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company 6",
+            "address": "444 Birch Street, Village, Country",
+            "phone": "888-222-6666",
+            "website": "https://www.company6.com",
+            "image": "company6.jpg",
+            "membership_level": "Silver",
+            "additional_info": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name": "Company 7",
+            "address": "777 Maple Avenue, City, Country",
+            "phone": "111-333-5555",
+            "website": "https://www.company7.com",
+            "image": "company7.jpg",
+            "membership_level": "Bronze",
+            "additional_info": "Eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur adipiscing elit."
+        }
+    ]
+}

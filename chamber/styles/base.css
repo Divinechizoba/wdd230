@@ -34,4 +34,18 @@
         transition: none;
         /* Remove transition effect on mobile */
     }
+
+    #member-directory {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* Change to one-column layout */
+    }
+
+    /* Style the buttons in a new row if needed */
+    #toggle-buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }

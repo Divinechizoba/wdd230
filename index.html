@@ -71,7 +71,9 @@
             <a href="images/combinator.png">combinator excercise</a>
             <a href="url">a</a>
           </li>
-          <li>Lesson 05: <a href="url">a</a></li>
+          <li>Lesson 05: <a href="https://codepen.io/divinechizoba/pen/oNJOZxP">Pseudo-elements </a>
+            <a href="week05/new-ward-members.json">JSON data </a>
+          </li>
           <li>Lesson 06: <a href="url">a</a></li>
           <li>Lesson 07: <a href="url">a</a></li>
         </ul>
@@ -83,7 +85,9 @@
           Information
         </h3>
         <div id="weather-info">
-          Loading weather data...
+          <p class="temperature">Temperature: <span id="temp"></span>°C</p>
+          <p class="description">Condition: <span id="description"></span></p>
+          <img src="" alt="Weather Icon" id="weather-icon">
         </div>
         <p> Website visit count:<span class="website-counter"></span></p>
       </section>
@@ -107,3 +111,65 @@
 </body>
 
 </html>
+
+const linksURL = 'data/links.json';
+
+fetch(linksURL)
+.then((response) => response.json())
+.then((data) => {
+const linksContainer = document.getElementById('activity-links');
+
+data.weeks.forEach((week) => {
+const weekDiv = document.createElement('div');
+weekDiv.className = 'week';
+
+const weekTitle = document.createElement('h3');
+weekTitle.textContent = week.week;
+weekDiv.appendChild(weekTitle);
+
+const linksList = document.createElement('ul');
+week.links.forEach((link) => {
+const listItem = document.createElement('li');
+const linkElement = document.createElement('a');
+linkElement.href = link.url;
+linkElement.textContent = link.title;
+listItem.appendChild(linkElement);
+linksList.appendChild(listItem);
+});
+
+weekDiv.appendChild(linksList);
+linksContainer.appendChild(weekDiv);
+});
+})
+.catch((error) => {
+console.error('Error loading activity links:', error);
+});
+2 const apiKey = 'YOUR_API_KEY';
+const city = 'YOUR_CITY_NAME';
+const country = 'YOUR_COUNTRY_CODE';
+
+const weatherCard = document.getElementById('weather-card');
+const weatherDescription = document.getElementById('weather-description');
+const temperature = document.getElementById('temperature');
+const weatherIcon = document.getElementById('weather-icon');
+
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${apiKey}`;
+
+fetch(apiUrl)
+.then((response) => response.json())
+.then((data) => {
+weatherDescription.textContent = data.weather[0].description;
+temperature.textContent = `Temperature: ${data.main.temp}°C`;
+weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+})
+.catch((error) => {
+console.error('Error fetching weather data:', error);
+weatherCard.style.display = 'none'; // Hide the weather card if there's an error
+});
+3 <section id="weather-card">
+  <h2>Current Weather</h2>
+  <p id="weather-description">Loading...</p>
+  <p id="temperature">Loading...</p>
+  <img id="weather-icon" alt="Weather Icon" src="">
+
+</section>
