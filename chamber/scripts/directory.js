@@ -19,11 +19,14 @@ function loadMemberData() {
                 const addressElement = document.createElement('p');
                 addressElement.textContent = member.address;
 
-                // Add other information elements (phone, website, image, membership level, etc.)
+                const phoneElement = document.createElement('p');
+                phoneElement.textContent = member.phone;
+
 
                 // Append the elements to the member item
                 memberItem.appendChild(nameElement);
                 memberItem.appendChild(addressElement);
+                memberItem.appendChild(phoneElement);
                 // Append other information elements as needed...
 
                 // Append the member item to the member directory
