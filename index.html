@@ -64,18 +64,7 @@
         </h3>
 
         <ul class="lesson-titles">
-          <li>Lesson 01: <a href="week01/chamber-site-plan.html">The Chamber Site Plan</a></li>
-          <li>Lesson 02: <a href="chamber/index.html">Chamber Site</a></li>
-          <li>Lesson 03: <a href="url">a</a></li>
-          <li>Lesson 04: <a href="https://codepen.io/divinechizoba/pen/LYMXbqr">CSS Pseudo-classes</a>
-            <a href="images/combinator.png">combinator excercise</a>
-            <a href="url">a</a>
-          </li>
-          <li>Lesson 05: <a href="https://codepen.io/divinechizoba/pen/oNJOZxP">Pseudo-elements </a>
-            <a href="week05/new-ward-members.json">JSON data </a>
-          </li>
-          <li>Lesson 06: <a href="url">a</a></li>
-          <li>Lesson 07: <a href="url">a</a></li>
+
         </ul>
       </div>
 
@@ -106,157 +95,10 @@
     <p>&copy; <span id="demo"></span> .:|:. Divine Chizoba Chukwu .:|:. Delta State, Nigeria</p>
     <p> Last Modification: <span id="lastmodified"></span></p>
   </footer>
-  <script>
-  </script>
+  <script src="script/links.js"></script>
   <script src="script/getDates.js"></script>
   <script src="script/visitcount.js"></script>
   <script src="script/weather.js"></script><!--Get javascript content-->
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Divine Chizoba Chukwu's - WDD 230 - Web Frontend Development</title>
-  <meta name="description" content="Divine Chizoba Chukwu  WDD 230 - Web Frontend Development course assignment Portal">
-  <meta name="Author" content="Divine Chizoba Chukwu">
-  <meta property="og:title" content="Divine Chizoba Chukwu's BYU-IDAHO Assignment Portal">
-  <meta property="og:type"
-    content="Official Website of Divine Chizoba Chukwu's WDD230 Assignments. Here contains all his Assignments specifically structured and designed by him. ">
-  <meta property="og:description" content="Easy access to view my BYU-Idaho web development assignments">
-  <meta property="og:image" content="images\Enugu.jpeg">
-  <meta property="og:url" content="https://divinechizoba.github.io/wdd230/">
-
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-  <header>
-    <img src="images/divine.webp" alt="Picture of Divine Chizoba Chukwu.">
-    <span class="name">Divine Chizoba Chukwu</span>
-  </header>
-
-  <nav>
-    <ul class="navigation">
-      <li class="highlight"><a href="chamber/index.html">Chamber</a></li>
-      <li class="highlight"> <a href="index.html">Home</a></li>
-      <li class="highlight"><a href="url">Site Plan</a></li>
-      <li class="highlight"><a href="form.html">Form</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <div class="hero">
-      <picture>
-        <source srcset="images/church_of_jesus_christ_temple.webp" media="(max-width: 400px)">
-        <source srcset="images/church_of_jesus_christ_temple-large.webp"
-          media="(max-width: 960px) and (orientation: landscape)">
-        <img src="images/church_of_jesus_christ_temple-large.webp" alt="Church of Jesus christ temple">
-      </picture>
-
-      <div class="herolabel">
-        <p>Bentonville Arkansas Temple</p>
-      </div>
-    </div>
-
-    <h2 class="H_assignment">
-      WDD 230: Assignment Portal
-    </h2>
-
-    <div class="grid-container">
-      <div data-attribute="Card" class="card-one">
-        <h3 class="Learning-activity">
-          Learning Activities
-        </h3>
-
-        <!-- The dynamically generated links will go here -->
-        <ul class="lesson-titles"></ul>
-      </div>
-
-      <section class="Card">
-        <h3>
-          Information
-        </h3>
-        <div id="weather-info">
-          <p class="temperature">Temperature: <span id="temp"></span></p>
-          <img src="" alt="Weather Icon" id="weather-icon">
-          <p class="description">Condition: <span id="description"></span></p>
-        </div>
-        <p> Website visit count:<span class="website-counter"></span></p>
-      </section>
-    </div>
-
-    <div class="L-assignment">
-      <p>Lessons may need more than one assignment link</p>
-    </div>
-  </main>
-
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.908031013847!2d5.623416173607246!3d6.275821925994877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d167759e991d%3A0x9a4730dea9571a98!2sPine%20Crest%20Court!5e0!3m2!1sen!2sng!4v1697026491067!5m2!1sen!2sng"
-    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-  <footer>
-    <p>&copy; <span id="demo"></span> .:|:. Divine Chizoba Chukwu .:|:. Delta State, Nigeria</p>
-    <p> Last Modification: <span id="lastmodified"></span></p>
-  </footer>
-
-  <script>
-    const baseURL = 'https://divinechizoba.github.io/wdd230/';
-    const linksURL = 'https://divinechizoba.github.io/wdd230/data/links.json';
-
-    async function getLinks() {
-      try {
-        const response = await fetch(linksURL);
-        if (response.ok) {
-          const data = await response.json();
-          displayLinks(data);
-        } else {
-          throw Error(await response.text());
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-    function displayLinks(weeks) {
-      const container = document.querySelector(".lesson-titles");
-
-      weeks.forEach((week) => {
-        const weekList = document.createElement("ul");
-        const weekTitle = document.createElement("li");
-        weekTitle.textContent = week.week;
-        weekList.appendChild(weekTitle);
-
-        week.links.forEach((link) => {
-          const linkItem = document.createElement("li");
-          const linkAnchor = document.createElement("a");
-          linkAnchor.href = `${baseURL}${link.url}`;
-          linkAnchor.textContent = link.title;
-          linkItem.appendChild(linkAnchor);
-          weekList.appendChild(linkItem);
-        });
-
-        container.appendChild(weekList);
-      });
-    }
-
-    // Call the getLinks function to fetch JSON data
-    getLinks();
-  </script>
-  <script src="script/getDates.js"></script>
-  <script src="script/visitcount.js"></script>
-  <script src="script/weather.js"></script>
 </body>
 
 </html>

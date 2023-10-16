@@ -1,51 +1,35 @@
-const baseURL = 'https://divinechizoba.github.io/wdd230/';
-const linksURL = 'https://divinechizoba.github.io/wdd230/data/links.json';
+const baseURL = 'https://divinechizoba.github.io/wdd230/'; // Replace with your GitHub Pages URL
+const linksURL = 'https://divinechizoba.github.io/wdd230/data/links.json'; // Replace with your JSON file's URL
 
-async function getLinks() {
-    try {
-        const response = await fetch(linksURL);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data); // Test data retrieval
-            displayLinks(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
+
+
+// Define the function to load and display activity links
+function loadActivityLinks() {
+    fetch('data/links.json') // Replace with the actual path to your JSON file
+        .then(response => response.json())
+        .then(data => {
+            const lessonTitles = document.querySelector('.lesson-titles');
+            const weeks = data.weeks;
+
+            weeks.forEach(week => {
+                const weekList = document.createElement('li');
+                weekList.textContent = week.week;
+
+                week.links.forEach(link => {
+                    const linkItem = document.createElement('a');
+                    linkItem.href = `${baseURL}${link.url}`;
+                    linkItem.textContent = link.title;
+
+                    const listItem = document.createElement('li');
+                    listItem.appendChild(linkItem);
+                    weekList.appendChild(listItem);
+                });
+
+                lessonTitles.appendChild(weekList);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
 }
 
-// Call the getLinks function to fetch JSON data
-getLinks();
-function displayLinks(weeks) {
-    // Get the container element in your HTML where you want to insert the links
-    const container = document.getElementById("lesson-titles"); // Replace with the actual element ID
-
-    // Loop through the "weeks" array from the JSON data
-    weeks.forEach((week) => {
-        // Create a list element for the week
-        const weekList = document.createElement("ul");
-        const weekTitle = document.createElement("li");
-        weekTitle.textContent = week.week;
-        weekList.appendChild(weekTitle);
-
-        // Loop through the "links" array for each week
-        week.links.forEach((link) => {
-            // Create list items for each link
-            const linkItem = document.createElement("li");
-            const linkAnchor = document.createElement("a");
-            linkAnchor.href = `${baseURL}${link.url}`;
-            linkAnchor.textContent = link.title;
-            linkItem.appendChild(linkAnchor);
-            weekList.appendChild(linkItem);
-        });
-
-        // Append the week's list to the container
-        container.appendChild(weekList);
-    });
-}
-
-// Call the displayLinks function to build the link menu
-// Make sure to specify the appropriate container element ID
-// Example: displayLinks(data);
+// Call the function to load and display activity links
+loadActivityLinks();

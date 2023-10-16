@@ -48,8 +48,12 @@
             "week": "Week 5",
             "links": [
                 {
-                    "url": "week05/exercise.html",
-                    "title": "Exercise"
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"
+                },
+                {
+                    "url": "https://codepen.io/divinechizoba/pen/oNJOZxP",
+                    "title": "Pseudo-Element"
                 }
             ]
         }
