@@ -25,11 +25,17 @@
         content="https://lh3.googleusercontent.com/p/AF1QipPaEkiny_KtNBtYEDK0vLuOZv1JWtsUfvSuDO5O=w574-h384-n-k-rw-no-v1els/entity/ChoI7Ied1oSp__j9ARoNL2cvMTFqbHoyMTB3bhAE?utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjQlf7h2e6BAxUAAAAAHQAAAAAQAw&ts=CAESABoECgIaACoECgAaAA">
 
 
-    <title>Enugu state chamber of commerce</title>
+    <title>Enugu state chamber of commerce. Facilitate the development of your venture.</title>
 
 </head>
 
 <body>
+    <!-- Add the following banner section to your HTML -->
+    <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m. <button id="closeBanner"
+                class="close-button">❌</button></p>
+    </div>
+
     <header>
         <div id="heading">
             <div id="enugu">
@@ -43,9 +49,8 @@
 
         <nav>
             <ul id="navigation">
-                <li>Home</li>
                 <li> <a href="discover.html">Discover</a> </li>
-                <li>Directory</li>
+                <li> <a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
@@ -72,21 +77,16 @@
                     <h2>Events</h2>
                 </div>
 
-                <div id="weather">
+                <div id="weather-info">
                     <h2>Weather</h2>
+                    <p class="temperature">Temperature: <span id="temp"></span></p>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        alt="Weather Icon" id="weather-icon">
+                    <p class="description">Condition: <span id="description"></span></p>
                 </div>
             </div>
             <div id="advertisement">
-                <div id="vmotors">
-                    <h3> VC Motor Ventures</h3>
-                </div>
-                <div id="rgalleria">
-                    <h3> Ruth's Galleria</h3>
-                </div>
 
-                <div id="pplus">
-                    <h3> Provision Plus Nigeria Limited</h3>
-                </div>
             </div>
         </div>
     </main>
@@ -105,7 +105,10 @@
         <p id="lastupdated"></p>
     </footer>
 
-    <script src="script/index.js"></script> <!--Get javascript content-->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/weather.js"></script> <!--Get javascript content-->
+    <script src="scripts/advertisement.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 
