@@ -34,6 +34,12 @@ nav {
     padding: 0;
 }
 
+.menu-icon {
+    display: none;
+}
+
+
+
 #navigation li {
     display: inline;
     margin-right: 20px;
@@ -245,7 +251,7 @@ legend {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: radial-gradient(#fff, #4D5B97);
+    background: radial-gradient(#7F361E, #4D5B97);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
@@ -273,7 +279,7 @@ legend {
 }
 
 #events {
-    padding: 10px;
+    padding: 5px;
     width: auto;
     height: auto;
     background-color: rgb(200, 205, 205);
@@ -282,6 +288,7 @@ legend {
 #weather-info {
     width: auto;
     padding-left: 10px;
+    padding-right: 10px;
     background-color: rgb(200, 205, 205);
 }
 
@@ -310,24 +317,8 @@ legend {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-gap: 2px;
-}
-
-#vmotors {
-    width: auto;
-    padding-left: 10px;
     background-color: rgb(200, 205, 205);
-}
-
-#rgalleria {
-    width: auto;
-    padding-left: 10px;
-    background-color: rgb(200, 205, 205);
-}
-
-#pplus {
-    width: auto;
-    padding-left: 10px;
-    background-color: rgb(200, 205, 205);
+    padding-left: 3%;
 }
 
 #chamber-events {
